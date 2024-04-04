@@ -1,15 +1,13 @@
-// Complete the Index page component here
-// Use chakra-ui
-import { Button } from "@chakra-ui/react"; // example
-import { FaPlus } from "react-icons/fa"; // example - use react-icons/fa for icons
+import { VStack, Input } from "@chakra-ui/react";
+import Header from "../components/Header";
 
 const Index = () => {
-  // TODO: Create the website here!
   return (
-    <Button>
-      Hello world! <FaPlus />
-    </Button>
-  ); // example
+    <VStack spacing={8} align="stretch" mx="auto" maxW="lg" py={8}>
+      <Header />
+      <Input placeholder="Enter a new todo item" size="lg" borderRadius="md" boxShadow="md" />
+    </VStack>
+  );
 };
 
 export default Index;
